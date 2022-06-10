@@ -17,32 +17,32 @@
 
   <body>
 
-    <header class="header.box">
-      <div class="container header-container">
-      <nav class="nav">
-        <a href="./index.html" lang="en" class="logo"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="site-nav">
-          <li class="item"><a href="./index.html" class="navigation-link  link">Студія</a></li>
-          <li class="item"><a href="./portfolio.html" class="navigation-link current link ">Портфоліо</a></li>
-          <li class="item"><a href="#address" class="navigation-link link ">Контакти</a></li>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html" lang="en" ><span class="logo__accent">Web</span>Studio</a>
+      <nav class="navigation">
+        <ul class="navigation__site-nav">
+          <li class="navigation__item"><a href="./index.html" class="navigation__link  current">Студія</a></li>
+          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+          <li class="navigation__item"><a href="#address" class="navigation__link">Контакти</a></li>
         </ul>
       </nav>
       <ul class="contact-list">
         <!--електронна пошта-->
-        <li class="item">
-          <a  href="mailto:info@devstudio.com" class="link"> info@devstudio.com
+        <li class="contact-list__item">
+          <a  href="mailto:info@devstudio.com" class="contact-list__link"> info@devstudio.com
 
-            <svg class="icon" width="16" height="12">
+            <svg class="contact-list__icon" width="16" height="12">
               <use href="./images/sprite.svg#icon-mail"></use>
             </svg>
 
           </a>
         </li>
         <!--номер телефону-->
-        <li class="item">
-          <a  href="tel:+380961111111" class="link">+38 096 111 11 11
+        <li class="contact-list__item">
+          <a  href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11
 
-            <svg class="icon" width="10" height="16">
+            <svg class="contact-list__icon" width="10" height="16">
               <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>
 
@@ -52,21 +52,22 @@
       </div>
     </header>
 
+
     <main>
-      <section class="btn-section">
+      <section class="gallery-section">
         <div class="container">
-        <h1 class="title">Портфоліо</h1>
-        <ul class="list">
-          <li class="item"><button type="button" class="btn-list">Все</button></li>
-          <li class="item"><button type="button" class="btn-list">Веб-сайти</button></li>
-          <li class="item"><button type="button" class="btn-list">Додатки</button></li>
-          <li class="item"><button type="button" class="btn-list">Дизайн</button></li>
-          <li class="item"><button type="button" class="btn-list">Маркетинг</button></li>
+        <h1 class="gallery-section__title">Портфоліо</h1>
+        <ul class="button-section">
+          <li class="button-section__item"><button type="button" class="button-list">Все</button></li>
+          <li class="button-section__item"><button type="button" class="button-list">Веб-сайти</button></li>
+          <li class="button-section__item"><button type="button" class="button-list">Додатки</button></li>
+          <li class="button-section__item"><button type="button" class="button-list">Дизайн</button></li>
+          <li class="button-section__item"><button type="button" class="button-list">Маркетинг</button></li>
         </ul>
-        <ul class="list">
-          <li class="card">
+        <ul class="gallery">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
                 
               <img
                 src="./images2/img1.png"
@@ -82,14 +83,14 @@
                 </p>
               </div>
               </div>
-           <div class="div-project"> <h2 class="project">Технокряк</h2>
-            <p class="name">Веб-сайт</p>
+           <div class="project"> <h2 class="project__title">Технокряк</h2>
+            <p class="project__text">Веб-сайт</p>
         </div>
       </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img2.png"
                 alt="Баскетбольний постер"
@@ -104,14 +105,14 @@
                 </p>
               </div>
               </div>
-            <div class="div-project"> <h2 class="project">Постер New Orlean vs Golden Star</h2>
-            <p class="name">Дизайн</p> 
+            <div class="project"> <h2 class="project__title">Постер New Orlean vs Golden Star</h2>
+            <p class="project__text">Дизайн</p> 
           </div>
           </a> 
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img3.png"
                 alt="Лого додатку"
@@ -126,14 +127,14 @@
                 </p>
               </div>
               </div>
-          <div class="div-project"> <h2 class="project">Ресторан Seafood</h2>
-            <p class="name">Додаток</p> </div>
+          <div class="project"> <h2 class="project__title">Ресторан Seafood</h2>
+            <p class="project__text">Додаток</p> </div>
             
           </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img4.png"
                 alt="Навушники"
@@ -148,14 +149,14 @@
               </p>
             </div>
               </div>
-           <div class="div-project"> <h2 class="project">Проект Prime</h2>
-            <p class="name">Маркетинг</p> </div>
+           <div class="project"> <h2 class="project__title">Проект Prime</h2>
+            <p class="project__text">Маркетинг</p> </div>
               
           </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img5.png"
                 alt="Коробки"
@@ -170,13 +171,13 @@
               </p>
             </div>
               </div>
-            <div class="div-project"> <h2 class="project">Проект Boxes</h2>
-            <p class="name">Додаток</p> </div>
+            <div class="project"> <h2 class="project__title">Проект Boxes</h2>
+            <p class="project__text">Додаток</p> </div>
           </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img6.png"
                 alt="Монітор"
@@ -191,13 +192,13 @@
               </p>
             </div>
               </div>
-          <div class="div-project"> <h2 class="project">Inspiration has no Borders</h2>
+          <div class="project"> <h2 class="project__title">Inspiration has no Borders</h2>
             <p class="name">Веб-сайт</p> </div>
           </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img7.png"
                 alt="Книга"
@@ -212,13 +213,13 @@
               </p>
             </div>
               </div>
-          <div class="div-project"> <h2 class="project">Видання Limited Edition</h2>
-            <p class="name">Дизайн</p> </div>
+          <div class="project"> <h2 class="project__title">Видання Limited Edition</h2>
+            <p class="project__text">Дизайн</p> </div>
           </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
-              <div class="gallery-card">
+              <div class="gallery__card">
               <img
                 src="./images2/img8.png"
                 alt="Етикетка"
@@ -233,11 +234,11 @@
               </p>
             </div>
               </div>
-          <div class="div-project"><h2 class="project">Проект LAB</h2>
-            <p class="name">Маркетинг</p> </div>
+          <div class="project"><h2 class="project__title">Проект LAB</h2>
+            <p class="project__text">Маркетинг</p> </div>
           </a>
           </li>
-          <li class="card">
+          <li class="gallery__item">
             <a href="">
               <div class="gallery-card">
               <img
@@ -254,8 +255,8 @@
               </p>
             </div>
               </div>
-          <div class="div-project"> <h2 class="project">Growing Business</h2>
-            <p class="name">Додаток</p> </div>
+          <div class="project"> <h2 class="project__title">Growing Business</h2>
+            <p class="project__text">Додаток</p> </div>
           </a>
           </li>
         </ul>
@@ -268,7 +269,7 @@
         <div class="ftr-box">
       <a href="./index.html" lang="en" class="logo-ftr"><span class="logo-accent-ftr">Web</span>Studio</a>
       <address id="address" class="address">
-        <ul class="list">
+        <ul class="footer-list">
           <li class="item">
             <a class="adrs-ftr"
               href="https://bit.ly/3pXMvUd"
@@ -334,7 +335,26 @@
         </li>
       </ul>
     </div>
+    
+<div class="subscride"> 
+      <form class="join-form" name="join-form" action="./js/method.js" method="post">
+        <h3  class="join-title">
+          <b>Підпишіться на розсилку</b>
+        </h3>
+        <div class="ftr-form">
+        <label class="join-group">
+          <input class="join-email" type="email" placeholder="E-mail">
+        </label>
+          <button class="join-btn" type="submit">Підписатись
+            <svg class="join-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+  </div>
       </div>
-    </footer>
+  </footer>
+
   </body>
 </html>

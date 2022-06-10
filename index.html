@@ -15,32 +15,32 @@
   <body>
 
     <!--Шапка-->
-    <header class="header.box">
-      <div class="container header-container">
-      <nav class="nav">
-        <a href="./index.html" lang="en" class="logo"><span class="logo-accent">Web</span>Studio</a>
-        <ul class="site-nav">
-          <li class="item"><a href="./index.html" class="navigation-link  current link">Студія</a></li>
-          <li class="item"><a href="./portfolio.html" class="navigation-link link ">Портфоліо</a></li>
-          <li class="item"><a href="#address" class="navigation-link link ">Контакти</a></li>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo" href="./index.html" lang="en" ><span class="logo__accent">Web</span>Studio</a>
+      <nav class="navigation">
+        <ul class="navigation__site-nav">
+          <li class="navigation__item"><a href="./index.html" class="navigation__link  current">Студія</a></li>
+          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+          <li class="navigation__item"><a href="#address" class="navigation__link">Контакти</a></li>
         </ul>
       </nav>
       <ul class="contact-list">
         <!--електронна пошта-->
-        <li class="item">
-          <a  href="mailto:info@devstudio.com" class="link"> info@devstudio.com
+        <li class="contact-list__item">
+          <a  href="mailto:info@devstudio.com" class="contact-list__link"> info@devstudio.com
 
-            <svg class="icon" width="16" height="12">
+            <svg class="contact-list__icon" width="16" height="12">
               <use href="./images/sprite.svg#icon-mail"></use>
             </svg>
 
           </a>
         </li>
         <!--номер телефону-->
-        <li class="item">
-          <a  href="tel:+380961111111" class="link">+38 096 111 11 11
+        <li class="contact-list__item">
+          <a  href="tel:+380961111111" class="contact-list__link">+38 096 111 11 11
 
-            <svg class="icon" width="10" height="16">
+            <svg class="contact-list__icon" width="10" height="16">
               <use href="./images/sprite.svg#icon-smartphone"></use>
             </svg>
 
@@ -52,69 +52,71 @@
 
     <main>
       <section class="hero">
-        <div class="container">
-        <h1 class="title">Ефективні рішення <br /> для вашого бізнесу</h1>
-        <button type="button" class="btn" data-modal-open >Замовити послугу</button>
+        <div class="hero__container">
+        <h1 class="hero__title">Ефективні рішення <br /> для вашого бізнесу</h1>
+        <button type="button" class="button" data-modal-open >Замовити послугу</button>
          <div class="backdrop is-hidden" data-modal >
          <div class="modal-wrapper">
-         <button class="modal-btn" data-modal-close>
-           <svg class="btn-icon" wight="18" height="18"> 
+         <button class="modal-button" data-modal-close>
+           <svg class="modal-button__icon" wight="18" height="18"> 
              <use href="./images/sprite.svg#Close-back"></use>
            </svg>
          </button>
          
          <form class="modal-form" name="modal-form" autocomplete="off" novalidate action="./js/method.js" method="post">
-          <div class="form-wrapper"> 
-           <h3 class="modal-hero-tittle">
+           <h3 class="modal-form__title">
              <b> Залиште свої особисті дані, ми вам перетелефонуємо</b>
            </h3>
            <ul class="modal-list">
-           <li class="modal-item"> <label class="form-group" for="user-name">
-             <span class="form-label">Ім'я</span>
-             <input class="modal-input" type="text" name="user-name" id="user-name">
-             <span class="form-icon">
-              <svg class="user-icon" wight="12" height="12"> 
+           <li class="modal-list__item">
+            <label class="modal-list__group" for="user-name">
+             <span class="modal-list__label">Ім'я</span>
+             <input class="modal-list__input" type="text" name="user-name" id="user-name">
+             <span class="modal-list__icon">
+              <svg class="modal-list__user-icon" wight="12" height="12"> 
                 <use href="./images/sprite.svg#icon-Human"></use>
               </svg>
-             </span>
+             </span> 
            </label> </li>
-           <li class="modal-item"> <label class="form-group" for="user-phone">
-            <span class="form-label">Телефон</span>
-            <input class="modal-input" type="tel" name="user-phone" id="user-phone">
-            <span class="form-icon">
-              <svg class="user-icon" wight="12" height="12"> 
+           <li class="modal-list__item">
+           <label class="modal-list__group" for="user-phone">
+            <span class="modal-list__label">Телефон</span>
+            <input class="modal-list__input" type="tel" name="user-phone" id="user-phone">
+            <span class="modal-list__icon">
+              <svg class="modal-list__user-icon" wight="12" height="12"> 
                 <use href="./images/sprite.svg#icon-tel"></use>
               </svg>
              </span>
           </label> </li>
-          <li class="modal-item"> <label class="form-group" for="user-email">
-            <span class="form-label">Пошта</span>
-            <input class="modal-input" type="email" name="user-email" id="user-email">
-            <span class="form-icon">
-              <svg class="user-icon" wight="12" height="12"> 
+          <li class="modal-list__item"> 
+            <label class="modal-list__group" for="user-email">
+            <span class="modal-list__label">Пошта</span>
+            <input class="modal-list__input" type="email" name="user-email" id="user-email">
+            <span class="modal-list__icon">
+              <svg class="modal-list__user-icon" wight="12" height="12"> 
                 <use href="./images/sprite.svg#icon-mail-black"></use>
               </svg>
              </span>
           </label> </li>
-          <li class="modal-item"> <label class="form-group">
-            <span class="form-label">Коментар</span>
-            <textarea class="comment modal-input" name="comment" id="comment" placeholder="Введіть текст"></textarea>
+          <li class="modal-list__item"> 
+            <label class="modal-list__group">
+            <span class="modal-list__label">Коментар</span>
+            <textarea class="modal-list__comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
           </label> </li>
            </ul>
-           </div>
-           <div class="checkbox-container">
-            <label class="form-policy-group"> 
-              <input class="checkbox" type="checkbox" name="checkbox" id="checkbox"> 
-              <span class="custom-checkbox">
-                <svg class="custom-checkbox-icon" wight="15" height="15"> 
+           <div class="form-policy">
+            <label class="form-policy__label"> 
+              <input class="form-policy__checkbox" type="checkbox" name="checkbox" id="checkbox"> 
+              <span class="form-policy__custom-checkbox">
+                <svg class="form-policy__checkbox-icon" wight="15" height="15"> 
                   <use href="./images/sprite.svg#icon-chek">
                   </use>
                 </svg>
               </span>
-              <span class="conditions">Погоджуюсь із розсилкою і приймаю <a class="contract" href="#">Умови договору</a></span>
+              <span class="form-policy__conditions">Погоджуюсь із розсилкою і приймаю <a class="form-policy__contract" href="#">Умови договору</a></span>
             </label> 
            </div>
-          <button class="submit" type="submit">Відправити</button>
+          <button class="form-policy__submit" type="submit">Відправити</button>
          </form>
         </div>
       </div>
@@ -123,59 +125,59 @@
 
       <section class="advantages">
         <div class="container">
-        <ul class="list">
-          <li class="item">
-            <h2 class="title">Наші переваги</h2>
-            <div class="icon-box">
-              <svg  class="advantage-icon" width="70" height="70">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h2 class="advantages__title">Наші переваги</h2>
+            <div class="advantages__icon-box">
+              <svg  class="advantages__icon" width="70" height="70">
                 <use href="./images/sprite.svg#antenna-1"></use>
               </svg>
 
             </div>
-            <h3 class="subtitle">увага до деталей</h3>
-            <p class="text">
+            <h3 class="advantages__subtitle">увага до деталей</h3>
+            <p class="advantages__text">
               Ідейні ринки, а також початок повсякденної роботи з формування
               позиції.
             </p>
           </li>
-          <li  class="item">
+          <li  class="advantages__item">
 
-            <div class="icon-box">
-              <svg  class="advantage-icon" width="70" height="70">
+            <div class="advantages__icon-box">
+              <svg  class="advantages__icon" width="70" height="70">
                 <use href="./images/sprite.svg#clock-1"></use>
               </svg>
 
             </div>
 
-            <h3 class="subtitle">пунктуальність</h3>
-            <p class="text">
+            <h3 class="advantages__subtitle">пунктуальність</h3>
+            <p class="advantages__text">
               Завдання організації, особливо рамки та місце навчання кадрів,
               тягне за собою.
             </p>
           </li>
-          <li  class="item">
+          <li  class="advantages__item">
 
-            <div class="icon-box">
-              <svg  class="advantage-icon" width="70" height="70">
+            <div class="advantages__icon-box">
+              <svg  class="advantages__icon" width="70" height="70">
                 <use href="./images/sprite.svg#diagram-1"></use>
               </svg>
 
             </div>
 
-            <h3 class="subtitle">планування</h3>
-            <p class="text">Так само консультація з широким активом значно обумовлює.</p>
+            <h3 class="advantages__subtitle">планування</h3>
+            <p class="advantages__text">Так само консультація з широким активом значно обумовлює.</p>
           </li>
-          <li  class="item">
+          <li  class="advantages__item">
 
-            <div class="icon-box">
-              <svg  class="advantage-icon" width="70" height="70">
+            <div class="advantages__icon-box">
+              <svg  class="advantages__icon" width="70" height="70">
                 <use href="./images/sprite.svg#astronaut-1"></use>
               </svg>
 
             </div>
 
-            <h3 class="subtitle">сучасні технології</h3>
-            <p class="text">
+            <h3 class="advantages__subtitle">сучасні технології</h3>
+            <p class="advantages__text">
               Значимість цих проблем є настільки очевидною, що реалізація
               планових завдань.
             </p>
@@ -185,9 +187,10 @@
       </section>
 
       <section class="work">
-        <div class="container"><h2 class="title">Чим ми займаємось</h2>
-        <ul class="list">
-          <li class="item" data-work="Декстопні додатки">
+        <div class="container">
+          <h2 class="work__title">Чим ми займаємось</h2>
+        <ul class="work__list">
+          <li class="work__item" data-work="Декстопні додатки">
             <img 
               src="./images/Our Qualities 1.png"
               alt="Верстка"
@@ -198,7 +201,7 @@
              <p class="overlay-text">  Декстопні додатки </p>
             </div> -->
           </li>
-          <li class="item" data-work="Мобільні додатки">
+          <li class="work__item" data-work="Мобільні додатки">
             <img
               src="./images/Our Qualities 2.png"
               alt="Дизайн"
@@ -210,7 +213,7 @@
               <p class="overlay-text"> Мобільні додатки </p>
              </div> -->
           </li>
-          <li class="item" data-work="Дизайнерські рішення">
+          <li class="work__item" data-work="Дизайнерські рішення">
             <img
               src="./images/Our Qualities 3.png"
               alt="Графіка"
@@ -512,7 +515,7 @@
         <div class="ftr-box">
       <a href="./index.html" lang="en" class="logo-ftr"><span class="logo-accent-ftr">Web</span>Studio</a>
       <address id="address" class="address">
-        <ul class="list">
+        <ul class="footer-list">
           <li class="item">
             <a class="adrs-ftr"
               href="https://bit.ly/3pXMvUd"
@@ -581,7 +584,7 @@
     
 <div class="subscride"> 
       <form class="join-form" name="join-form" action="./js/method.js" method="post">
-        <h3  class="join-tittle">
+        <h3  class="join-title">
           <b>Підпишіться на розсилку</b>
         </h3>
         <div class="ftr-form">
