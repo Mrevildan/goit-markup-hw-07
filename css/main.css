@@ -876,16 +876,12 @@ a {
   padding: 0px;
 }
 
-.work__list > .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.work__list > .item > img {
-  display: block;
-}
-
 .work__item {
   position: relative;
+}
+
+.work__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work__item::before {
@@ -905,12 +901,11 @@ a {
   height: 70px;
   position: absolute;
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background: rgba(47, 48, 58, 0.8);
