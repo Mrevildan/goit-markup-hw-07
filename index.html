@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
 
@@ -20,7 +21,7 @@
         <a class="logo" href="./index.html" lang="en" ><span class="logo__accent">Web</span>Studio</a>
       <nav class="navigation">
         <ul class="navigation__site-nav">
-          <li class="navigation__item"><a href="./index.html" class="navigation__link  current">Студія</a></li>
+          <li class="navigation__item"><a href="./index.html" class="navigation__link--current">Студія</a></li>
           <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
           <li class="navigation__item"><a href="#address" class="navigation__link">Контакти</a></li>
         </ul>
@@ -54,7 +55,7 @@
       <section class="hero">
         <div class="hero__container">
         <h1 class="hero__title">Ефективні рішення <br /> для вашого бізнесу</h1>
-        <button type="button" class="button" data-modal-open >Замовити послугу</button>
+        <button type="button" class="btn button" data-modal-open >Замовити послугу</button>
          <div class="backdrop is-hidden" data-modal >
          <div class="modal-wrapper">
          <button class="modal-button" data-modal-close>
@@ -230,19 +231,19 @@
 
       <section class="team">
         <div class="container">
-        <h2 class="title">Наша команда</h2>
-        <ul class="list">
-          <li class="item">
+        <h2 class="team__title">Наша команда</h2>
+        <ul class="team__list">
+          <li class="team__item">
             <img
               src="./images/Ihor D.jpg"
               alt="Ігор Дем'яненко"
               width="270"
               height="260"
             />
-            <div class="description"> <h3 class="name">Ігор Дем'яненко</h3>
-            <p class="position">Product Designer</p>
+            <div class="description"> <h3 class="description__name">Ігор Дем'яненко</h3>
+            <p class="description__position">Product Designer</p>
           <ul class="social">
-<li class="social-item">
+<li class="social__item">
   <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
   aria-label="іконка Instagram">
 
@@ -252,7 +253,7 @@
 
 </a>
 </li>
-<li class="social-item">
+<li class="social__item">
   <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
   aria-label="іконка Twitter">
 
@@ -263,7 +264,7 @@
 
 </a>
 </li>
-<li class="social-item">
+<li class="social__item">
   <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
   aria-label="іконка Facebook">
 
@@ -273,7 +274,7 @@
 
 </a>
 </li>
-<li class="social-item">
+<li class="social__item">
   <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
   aria-label="іконка Linkedin">
 
@@ -286,7 +287,7 @@
           </ul>
          </div>
           </li>
-          <li class="item">
+          <li class="team__item">
             <img
               src="./images/Olga.jpg"
               alt="Ольга Репіна"
@@ -294,10 +295,10 @@
               height="260"
             />
             <div class="description">
-              <h3 class="name">Ольга Репіна</h3>
-            <p class="position">Frontend Developer</p> 
+              <h3 class="description__name">Ольга Репіна</h3>
+            <p class="description__position">Frontend Developer</p> 
             <ul class="social" >
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Instagram">
 
@@ -307,7 +308,7 @@
               
               </a>
               </li>
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Twitter">
               
@@ -317,7 +318,7 @@
 
               </a>
               </li>
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Facebook">
               
@@ -327,7 +328,7 @@
               
               </a>
               </li>
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Linkedin">
               
@@ -339,17 +340,18 @@
               </ul>
             </div> 
           </li>
-          <li class="item" >
+          <li class="team__item" >
             <img
               src="./images/Mykola.jpg"
               alt="Микола Тарасов"
               width="270"
               height="260"
             />
-            <div class="description"> <h3 class="name">Микола Тарасов</h3>
-            <p class="position">Marketing</p> 
+            <div class="description"> 
+              <h3 class="description__name">Микола Тарасов</h3>
+            <p class="description__position">Marketing</p> 
             <ul class="social">
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Instagram">
 
@@ -360,7 +362,7 @@
                 </a>
 
               </li>
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Twitter">
 
@@ -368,10 +370,9 @@
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
           
-
               </a>
               </li>
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Facebook">
 
@@ -381,7 +382,7 @@
               
               </a>
               </li>
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Linkedin">
               
@@ -394,7 +395,7 @@
                         </ul>
                       </div> 
           </li>
-          <li class="item">
+          <li class="team__item">
             <img
               src="./images/Mykhailo.jpg"
               alt="Михайло Єрмаков"
@@ -402,10 +403,10 @@
               height="260"
             />
             <div class="description"> 
-              <h3 class="name" >Михайло Єрмаков</h3>
-            <p class="position">UI Designer</p>
+              <h3 class="description__name" >Михайло Єрмаков</h3>
+            <p class="description__position">UI Designer</p>
             <ul class="social">
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Instagram">
 
@@ -416,7 +417,7 @@
               </a>
               </li>
 
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Twitter">
               
@@ -427,7 +428,7 @@
               </a>
               </li>
 
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Facebook">
               
@@ -438,7 +439,7 @@
               </a>
               </li>
 
-              <li class="social-item">
+              <li class="social__item">
                 <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
                 aria-label="іконка Linkedin">
 
@@ -459,46 +460,46 @@
       
       <section class="clients">
 <div class="container">
-  <h2 class="title"> Постійні клієнти </h2>
-  <ul class="list">
-    <li class="item"> 
-      <a href="" class="link">
-      <svg  class="clients-icon" width="106" height="60">
+  <h2 class="clients__title"> Постійні клієнти </h2>
+  <ul class="clients__list">
+    <li class="clients__item"> 
+      <a href="" class="clients__link">
+      <svg  class="clients__icon" width="106" height="60">
         <use href="./images/sprite.svg#Logo"></use>
       </svg>
     </a>
        </li>
-    <li class="item">
-      <a href="" class="link">
-      <svg  class="clients-icon" width="106" height="60">
+    <li class="clients__item">
+      <a href="" class="clients__link">
+      <svg  class="clients__icon" width="106" height="60">
         <use href="./images/sprite.svg#Logo-1"></use>
       </svg>
       </a>
        </li>
-    <li class="item"> 
-      <a href="" class="link">
-      <svg  class="clients-icon" width="106" height="60">
+    <li class="clients__item"> 
+      <a href="" class="clients__link">
+      <svg  class="clients__icon" width="106" height="60">
         <use href="./images/sprite.svg#Logo-2"></use>
       </svg>
       </a>
     </li>
-    <li class="item">
-      <a href="" class="link">
-      <svg  class="clients-icon" width="106" height="60">
+    <li class="clients__item">
+      <a href="" class="clients__link">
+      <svg  class="clients__icon" width="106" height="60">
         <use href="./images/sprite.svg#Logo-3"></use>
       </svg>
       </a>
        </li>
-    <li class="item">
-      <a href="" class="link">
-      <svg  class="clients-icon" width="106" height="60">
+    <li class="clients__item">
+      <a href="" class="clients__link">
+      <svg  class="clients__icon" width="106" height="60">
         <use href="./images/sprite.svg#Logo-4"></use>
       </svg>
       </a>
        </li>
-    <li class="item">
-      <a href="" class="link">
-      <svg  class="clients-icon" width="106" height="60">
+    <li class="clients__item">
+      <a href="" class="clients__link">
+      <svg  class="clients__icon" width="106" height="60">
         <use href="./images/sprite.svg#Logo-5"></use>
       </svg>
       </a>
@@ -513,7 +514,7 @@
     <footer class="footer">
       <div class="container">
         <div class="ftr-box">
-      <a href="./index.html" lang="en" class="logo-ftr"><span class="logo-accent-ftr">Web</span>Studio</a>
+      <a href="./index.html" lang="en" class="logo-ftr"><span class="logo__accent">Web</span>Studio</a>
       <address id="address" class="address">
         <ul class="footer-list">
           <li class="item">
@@ -540,7 +541,7 @@
     <div class="ftr-box-link">
       <h3 class="join">Приєднуйтесь</h3>
       <ul class="social">
-        <li class="social-item">
+        <li class="social__item">
           <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
           aria-label="іконка Instagram">
         
@@ -550,7 +551,7 @@
         
         </a>
         </li>
-        <li class="social-item">
+        <li class="social__item">
           <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
           aria-label="іконка Twitter">
         
@@ -560,7 +561,7 @@
           </a>
         
         </li>
-        <li class="social-item">
+        <li class="social__item">
           <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
           aria-label="іконка Facebook">
         
@@ -570,7 +571,7 @@
          
         </a>
         </li>
-        <li class="social-item">
+        <li class="social__item">
           <a class="social-link link" href="" target="_blank" rel="noopener_noreferrer" 
           aria-label="іконка Linkedin">
         
@@ -591,7 +592,7 @@
         <label class="join-group">
           <input class="join-email" type="email" placeholder="E-mail">
         </label>
-          <button class="join-btn" type="submit">Підписатись
+          <button class="btn join-button" type="submit">Підписатись
             <svg class="join-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>

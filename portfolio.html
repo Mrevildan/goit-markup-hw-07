@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css">
+
   </head>
 
   <body>
@@ -22,8 +24,8 @@
         <a class="logo" href="./index.html" lang="en" ><span class="logo__accent">Web</span>Studio</a>
       <nav class="navigation">
         <ul class="navigation__site-nav">
-          <li class="navigation__item"><a href="./index.html" class="navigation__link  current">Студія</a></li>
-          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфоліо</a></li>
+          <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
+          <li class="navigation__item"><a href="./portfolio.html" class="navigation__link--current">Портфоліо</a></li>
           <li class="navigation__item"><a href="#address" class="navigation__link">Контакти</a></li>
         </ul>
       </nav>
@@ -267,7 +269,7 @@
     <footer class="footer">
       <div class="container">
         <div class="ftr-box">
-      <a href="./index.html" lang="en" class="logo-ftr"><span class="logo-accent-ftr">Web</span>Studio</a>
+      <a href="./index.html" lang="en" class="logo-ftr"><span class="logo__accent">Web</span>Studio</a>
       <address id="address" class="address">
         <ul class="footer-list">
           <li class="item">
@@ -345,7 +347,7 @@
         <label class="join-group">
           <input class="join-email" type="email" placeholder="E-mail">
         </label>
-          <button class="join-btn" type="submit">Підписатись
+          <button class="join-button btn" type="submit">Підписатись
             <svg class="join-icon" width="24" height="24">
               <use href="./images/sprite.svg#icon-send"></use>
             </svg>
