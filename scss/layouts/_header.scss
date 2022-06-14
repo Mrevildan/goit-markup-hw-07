@@ -16,6 +16,7 @@
     @include fonts (700, 26px, 31px, 0.03em, null);
 
     color: var(--color-main-text);
+    
   }
   
   .logo__accent {
@@ -24,9 +25,10 @@
 
   .navigation {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 80px;
+    margin-right: 110px;
+
   }
 
   .navigation__site-nav {
@@ -97,13 +99,16 @@
     margin: 0%;
     align-items: center;
 }
-  
+
+  .contact-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
   .contact-list__link {
     display: flex;
     flex-direction: row-reverse;
     color: var(--color-secondary-text);
     align-items: center;
-    margin-right: 50px;
 
     transition: var(--fast-anim);
 
@@ -113,6 +118,7 @@
     color: var(--accent);
   }
 }
+
   .contact-list__icon {
    
     fill: currentColor;
